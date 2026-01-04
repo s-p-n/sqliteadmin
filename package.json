@@ -1,0 +1,21 @@
+{
+  "name": "sqliteadmin",
+  "version": "1.0.0",
+  "description": "A terminal sqlite admin tool.",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sqlite3",
+    "sqlite",
+    "admin",
+    "terminal",
+    "console"
+  ],
+  "author": "Spencer A. Lockhart",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
