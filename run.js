@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // sqlite-admin.js - Simple interactive SQLite3 database admin tool using PrettyJSON and table rendering
 
 const fs = require('fs');
