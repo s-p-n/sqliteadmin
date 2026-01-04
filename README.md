@@ -58,6 +58,6 @@ Enter SQL query (or "quit" to exit): select * from room_data
 └──────────────────┴─────────────────────────┴───────┴───────────────┘
 ```
 
-This is very bare bones and doesn't have support for db creation, schema, transactions, and many other things are untested. 
+This is very bare bones and doesn't have support for db creation, schema, transactions, paging (it spits out ALL the rows) and it's mostly untested- so **USE AT YOUR OWN RISK**. 
 
 I use it for basic crud operations on tables
