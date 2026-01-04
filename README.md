@@ -17,7 +17,7 @@ sqliteadmin
 ```
 
 Example output of:
- - Run `$ sqliteadmin` in a directory with a sqlite3 `.db` file
+ - Run `~/Projects/my-project/storage$ sqliteadmin`
  - Type `1` to connect to the first db in the list.
  - Enter `select * from room_data` to browse data
 ```
