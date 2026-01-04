@@ -1,4 +1,4 @@
-#Sqlite Admin command-line tool
+# Sqlite Admin command-line tool
 This is a very bare bones sqlite admin tool. (MIT Licensed)
 
 Installation:
