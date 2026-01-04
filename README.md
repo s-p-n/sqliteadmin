@@ -8,7 +8,7 @@ npm i -g https://github.com/s-p-n/sqliteadmin.git
 
 Usage:
  - Navigate to a directory with a db.
- - **Backup the db, because this tool can alter data**
+ - **Backup the db, because this tool can alter data** *(meaning, you can run update/delete queries)*
  - run the command `sqliteadmin`
 ```bash
 cd /path/to/folder/with/db
