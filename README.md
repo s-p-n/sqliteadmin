@@ -26,8 +26,8 @@ SQLite3 Admin Tool (with PrettyJSON table rendering)
 Found SQLite databases in current directory:
 
   1. database.db  (/home/myuser/Projects/my-project/storage/database.db)
-  1. database.bak.db  (/home/myuser/Projects/my-project/storage/database.bak.db)
-  2. Enter custom path
+  2. database.bak.db  (/home/myuser/Projects/my-project/storage/database.bak.db)
+  3. Enter custom path
 
 Select a database (number) or choose custom path: 1
 
