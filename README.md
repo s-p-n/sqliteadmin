@@ -7,8 +7,12 @@ npm i -g https://github.com/s-p-n/sqliteadmin.git
 ```
 
 Usage:
+ - Navigate to a directory with a db.
+ - **Backup the db, because this tool can alter data**
+ - run the command `sqliteadmin`
 ```bash
 cd /path/to/folder/with/db
+cp ./database.db ./database.bak.db
 sqliteadmin
 ```
 
@@ -22,6 +26,7 @@ SQLite3 Admin Tool (with PrettyJSON table rendering)
 Found SQLite databases in current directory:
 
   1. database.db  (/home/myuser/Projects/my-project/storage/database.db)
+  1. database.bak.db  (/home/myuser/Projects/my-project/storage/database.bak.db)
   2. Enter custom path
 
 Select a database (number) or choose custom path: 1
