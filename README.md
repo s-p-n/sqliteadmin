@@ -17,9 +17,9 @@ sqliteadmin
 ```
 
 Example output of:
- - Run `~/Projects/my-project/storage$ sqliteadmin`
- - Type `1` to connect to the first db in the list.
- - Enter `select * from room_data` to browse data
+ - Running `sqliteadmin` while in a directory with a sqlite3 `.db` file
+ - Typing `1` to connect to the first db in the list.
+ - Entering `select * from room_data` to browse the `room_data` table
 ```
 SQLite3 Admin Tool (with PrettyJSON table rendering)
 
