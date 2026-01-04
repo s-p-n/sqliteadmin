@@ -20,43 +20,44 @@ Example output of:
  - Running `sqliteadmin` while in a directory with a sqlite3 `.db` file
  - Typing `1` to connect to the first db in the list.
  - Entering `select * from room_data` to browse the `room_data` table
-```
-SQLite3 Admin Tool (with PrettyJSON table rendering)
 
-Found SQLite databases in current directory:
+> ~/Projects/my-project/storage$ sqliteadmin
+  SQLite3 Admin Tool (with PrettyJSON table rendering)
 
-  1. database.db  (/home/myuser/Projects/my-project/storage/database.db)
-  2. database.bak.db  (/home/myuser/Projects/my-project/storage/database.bak.db)
-  3. Enter custom path
+  Found SQLite databases in current directory:
 
-Select a database (number) or choose custom path: 1
+    1. database.db  (/home/myuser/Projects/my-project/storage/database.db)
+    2. database.bak.db  (/home/myuser/Projects/my-project/storage/database.bak.db)
+    3. Enter custom path
 
-✓ Successfully connected to: /home/myuser/Projects/my-project/storage/database.db
+  Select a database (number) or choose custom path: 1
 
-Available tables:
+  ✓ Successfully connected to: /home/myuser/Projects/my-project/storage/database.db
 
-┌──────────────┐
-│ table_name   │
-├──────────────┤
-│ users        │
-│ room_data    │
-│ room_members │
-└──────────────┘
+  Available tables:
 
-Enter SQL query (or "quit" to exit): select * from room_data
+  ┌──────────────┐
+  │ table_name   │
+  ├──────────────┤
+  │ users        │
+  │ room_data    │
+  │ room_members │
+  └──────────────┘
+
+  Enter SQL query (or "quit" to exit): select * from room_data
 
 
-┌────────────────────────────────────────────────────────────────────┐
-│ name             │ topic                   │ owner │ created_at    │
-├──────────────────┬─────────────────────────┬───────┬───────────────┤
-│ Alice's Chambers │                         │ Alice │ 1767300937980 │
-│ Test Name        │ Just a test.            │ Alice │ 1767306326909 │
-│ foo              │                         │ Alice │ 1767306653441 │
-│ Bob's Domain     │ A place to shoot shit   │ Bob   │ 1767333793545 │
-│ Zak's Vault      │                         │ Zak   │ 1767367674897 │
-│ Garden of Eden   │ The best place on Earth │ Adam  │ 1767377545310 │
-└──────────────────┴─────────────────────────┴───────┴───────────────┘
-```
+  ┌────────────────────────────────────────────────────────────────────┐
+  │ name             │ topic                   │ owner │ created_at    │
+  ├──────────────────┬─────────────────────────┬───────┬───────────────┤
+  │ Alice's Chambers │                         │ Alice │ 1767300937980 │
+  │ Test Name        │ Just a test.            │ Alice │ 1767306326909 │
+  │ foo              │                         │ Alice │ 1767306653441 │
+  │ Bob's Domain     │ A place to shoot shit   │ Bob   │ 1767333793545 │
+  │ Zak's Vault      │                         │ Zak   │ 1767367674897 │
+  │ Garden of Eden   │ The best place on Earth │ Adam  │ 1767377545310 │
+  └──────────────────┴─────────────────────────┴───────┴───────────────┘
+
 
 This is very bare bones and doesn't have support for db creation, schema, transactions, paging (it spits out ALL the rows) and it's mostly untested- so **USE AT YOUR OWN RISK**. 
 
