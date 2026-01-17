@@ -20,7 +20,7 @@ Example output of:
  - Running `sqliteadmin` while in a directory with a sqlite3 `.db` file
  - Typing `1` to connect to the first db in the list.
  - Entering `select * from room_data` to browse the `room_data` table
-
+```
 > ~/Projects/my-project/storage$ sqliteadmin
   SQLite3 Admin Tool (with PrettyJSON table rendering)
 
@@ -57,7 +57,7 @@ Example output of:
   │ Zak's Vault      │                         │ Zak   │ 1767367674897 │
   │ Garden of Eden   │ The best place on Earth │ Adam  │ 1767377545310 │
   └──────────────────┴─────────────────────────┴───────┴───────────────┘
-
+```
 
 This is very bare bones and doesn't have support for db creation, schema, transactions, paging (it spits out ALL the rows) and it's mostly untested- so **USE AT YOUR OWN RISK**. 
 
